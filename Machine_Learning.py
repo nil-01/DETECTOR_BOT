@@ -4,8 +4,7 @@ from random import randrange
 face_detector_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 car_detector_data = cv2.CascadeClassifier('cars.xml')
 pedestrial_detector_data = cv2.CascadeClassifier('haarcascade_fullbody.xml')
-webcam = cv2.VideoCapture('sample7.mp4')
-
+webcam = cv2.VideoCapture(0) # videocapture you can add file name of mp4 format and image to using 'filename.mp4' or 'filename.png'
 while True:
 
     successful_frame_read,frame=webcam.read()
